@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" minWidth="500.0" prefHeight="500.0" prefWidth="1000.0" spacing="20.0" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.petrik.etlap.EtlapController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <HBox>
+         <children>
+            <Button fx:id="felvetelgomb" mnemonicParsing="false" onAction="#felvetelClick" text="Új étel felvétele">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="torlesgomb" mnemonicParsing="false" onAction="#torlesClick" text="Törlés">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Spinner fx:id="szazalekSpinner" />
+            <Button fx:id="szazalekemelesGomb" mnemonicParsing="false" onAction="#szazalekemelesClick" text="Emelés" />
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Spinner fx:id="forintSpinner" />
+            <Button fx:id="forintemelesGomb" mnemonicParsing="false" onAction="#forintemelesClick" text="Button" />
+         </children>
+      </HBox>
+      <TableView fx:id="etlapTable" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="nevmezo" prefWidth="253.0" text="Név" />
+          <TableColumn fx:id="kategoriamezo" minWidth="0.0" prefWidth="97.0" text="Kategória" />
+            <TableColumn fx:id="armezo" prefWidth="109.0" text="Ár(Ft)" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
