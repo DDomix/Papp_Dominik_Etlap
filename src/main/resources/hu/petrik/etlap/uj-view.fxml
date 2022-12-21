@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="hu.petrik.etlap.UjController">
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.petrik.etlap.UjController">
    <children>
       <HBox alignment="CENTER" minHeight="0.0" minWidth="0.0" prefHeight="43.0" prefWidth="600.0" VBox.vgrow="NEVER">
          <children>
@@ -42,7 +41,7 @@
             <Insets top="20.0" />
          </VBox.margin>
       </HBox>
-      <Button fx:id="addHozzaadBGomb" mnemonicParsing="false" prefWidth="1000.0" text="Hozzáad">
+      <Button fx:id="addHozzaadBGomb" mnemonicParsing="false" onAction="#addHozzaadBGombClick" prefWidth="1000.0" text="Hozzáad">
          <VBox.margin>
             <Insets top="20.0" />
          </VBox.margin>

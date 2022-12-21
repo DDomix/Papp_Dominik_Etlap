@@ -148,7 +148,7 @@ public class EtlapController {
             FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("uj-view.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 640, 480);
             Stage stage = new Stage();
-            stage.setTitle("Create People");
+            stage.setTitle("Étel hozzáadása");
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {

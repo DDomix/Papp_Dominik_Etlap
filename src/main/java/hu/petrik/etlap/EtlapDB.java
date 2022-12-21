@@ -20,7 +20,7 @@ public class EtlapDB {
     }
 
     public boolean createEtlap(Etlap etlap) throws SQLException {
-        String sql = "INSERT INTO etlap(nev, leiras, ar, kategoria) VALUES (?,?,?,?)";
+        String sql = "INSERT INTO etlap(nev, leiras, kategoria, ar) VALUES (?,?,?,?)";
         PreparedStatement stmt = conn.prepareStatement(sql);
         stmt.setString(1, etlap.getNev());
         stmt.setString(2, etlap.getLeiras());
